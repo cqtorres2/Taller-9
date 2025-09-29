@@ -1,4 +1,4 @@
-package Incorrecto;
+/*package Incorrecto;
 
 public class Incorrecto {
     public String error = "X";
@@ -11,4 +11,4 @@ public class Incorrecto {
         super.error();
 
     }
-}
+} */
