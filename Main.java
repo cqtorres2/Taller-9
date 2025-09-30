@@ -8,7 +8,7 @@ public class Main {
         Persona perso = new Persona();
         Persona.Empleado per1 = perso.new Empleado("Bolivar", 23, "Miguel");
         Animal.Pez ani1 = anima.new Pez("Bagre", "Salada");
- 
+
         System.out.println(ani1);
         System.out.println(per1);
     }

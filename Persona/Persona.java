@@ -5,9 +5,8 @@ public class Persona {
     int edad;
 
     public String mostrarDetalles() {
-        System.out.println("Nombre: " + nombre
-                + " con una edad de " + edad + " años actualmente bajo contrato");
-        return nombre;
+        return "Nombre: " + nombre
+                + " con una edad de " + edad + " años actualmente bajo contrato";
     }
 
     public class Empleado extends Persona {
@@ -27,8 +26,7 @@ public class Persona {
 
         @Override
         public String toString() {
-            return "Nombre: " + nombre + " edad del empleado: " + edad + " actualmente de serivicio en " + departamento;
+            return super.mostrarDetalles();
         }
-
     }
 }

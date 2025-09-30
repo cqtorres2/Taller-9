@@ -3,8 +3,8 @@ package Animal;
 public class Animal {
     String especie;
 
-    public void mostrarEspecie() {
-        System.out.println("Especie: " + especie);
+    public String mostrarEspecie() {
+        return "Especie: " + especie;
     }
 
     public class Pez extends Animal {
@@ -16,14 +16,15 @@ public class Animal {
         }
 
         @Override
-        public void mostrarEspecie(){
+        public String mostrarEspecie(){
             super.mostrarEspecie();
-            System.out.println("Las caracteristicas del pez son las siguientes; Es de la especie " + especie + " Y habita aguas del tipo " + TipodeAgua);
+            return "Las caracteristicas del pez son las siguientes; Es de la especie " + especie + " Y habita aguas del tipo " + TipodeAgua;
+            
         }
 
         @Override
         public String toString() {
-            return "Las caracteristicas del pez son las siguientes; Es de la especie " + especie + " Y habita aguas del tipo " + TipodeAgua;
+            return mostrarEspecie();
         }
 
     }
